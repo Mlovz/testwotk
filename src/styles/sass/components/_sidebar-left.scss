@@ -1,0 +1,101 @@
+.sideleft{
+    height: 1400px;
+    background: linear-gradient(180deg, rgba(185, 251, 255, 0.2) 0%, rgba(227, 220, 255, 0.2) 100%);
+    backdrop-filter: blur(30px);
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+    border-right: 2px solid #fff;
+    &__wrap{
+        // padding: 77px 10px 10px 0px;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 77px 10px 0 0;
+        margin-bottom: 20px;
+        &__text{
+            display: flex;
+            align-items: center;
+            span{
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 149%;
+                text-transform: uppercase;
+                color: #2A2A2A;
+                margin-left: 10px;
+            }
+            
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+    &__menu{
+        transition: all .3s ease-in-out;
+        &__link{
+            display: flex;
+            align-items: center;
+            padding: 0;
+            height: 54px;
+            text-decoration: none;
+            transition: all .1s ease-in-out;
+            margin-bottom: 25px;
+            border-top: 2px solid transparent;
+            &.active{
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(30px);
+                border-right: 4px solid #0085FF;
+                border-top: 2px solid #fff;
+            }
+            svg{
+                transition: all .1s ease-in-out;
+                &.active{
+                    path{
+                        stroke: #0085FF;
+                    }
+                }
+            }
+            span{
+                margin-left: -15px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 149%;
+                color: #565555;
+                transition: all .1s ease-in-out;
+                &.active{
+                    color: #0085FF;
+                    text-shadow: 0px 0px 10px rgba(0, 133, 255, 1);
+                }
+            }
+            
+        }
+        &__list{
+            padding: 0 20px 0 36px;
+            .list__block{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                h1{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #2A2A2A;
+                }
+                span{
+                    font-weight: normal;
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: #565555;
+                }
+                a{
+                    text-decoration: none;
+                    color: #0085FF;
+                }
+            }
+            
+        }
+    }
+    
+}

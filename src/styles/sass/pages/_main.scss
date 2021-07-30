@@ -1,0 +1,58 @@
+.main{
+   
+    .filters{
+        padding-bottom: 20px;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &__search{
+            position: relative;
+            max-width: 768px;
+            width: 100%;
+            img{
+                position: absolute;
+                top: 12px;
+                left: 10px;
+            }
+            input{
+                width: 100%;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.8);
+                box-shadow: 10px 10px 40px rgba(156, 185, 222, 0.36);
+                border-radius: 10px;
+                border: none;
+                padding: 11px 36px;
+                outline: none;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #BBBBBB;
+                box-sizing: border-box;
+                &::placeholder{
+                    color: #BBBBBB;
+                }
+            }
+        }
+        
+        select{
+            max-width: 210px;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.8);
+            box-shadow: 10px 10px 40px rgba(156, 185, 222, 0.36);
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            padding: 11px 10px;
+            margin-left: 10px;
+            option{
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #2A2A2A;
+            }
+        }
+    }
+}

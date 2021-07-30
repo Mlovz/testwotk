@@ -1,0 +1,85 @@
+.header{
+    height: 56px;
+    background: linear-gradient(180deg, rgba(185, 251, 255, 0.2) 0%, rgba(227, 220, 255, 0.2) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    user-select: none;
+    &__active{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        span{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #BBBBBB;
+            margin-left: 10px;
+            
+            strong{
+                cursor: pointer;
+                color: rgb(91, 206, 56);
+            }
+        }
+    }
+    &__settings{
+        margin-right: 86px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        span{
+            margin-left: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #565555;
+
+        }
+    }
+    .settings__modal{
+        position: fixed;
+        top: 43px;
+        right: 80px;
+        z-index: 999;
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(185, 251, 255, 0.2) 0%, rgba(227, 220, 255, 0.2) 100%);
+        backdrop-filter: blur(30px);
+        overflow: hidden;
+        &__text{
+            color: #353535;
+            margin: 10px 10px 10px 20px;
+            h3{
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+        &__btn{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            a{
+                text-decoration: none;
+            }
+            .btn{
+                padding: 5px 10px 7px;
+                border-radius: 5px;
+                background: #0085FF;
+                color: #fff;
+                &.btn__modal__link{
+                    &:hover{
+                        background: #0271da;
+                    }
+                }
+                &.btn__modal__close{
+                    background: transparent;
+                    color: #353535;
+                    cursor: pointer;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

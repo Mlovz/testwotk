@@ -1,0 +1,36 @@
+.list__tags{
+    h6{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #2A2A2A;
+    }
+    &__flex{
+        display: flex;
+        flex-wrap: wrap;
+        
+        .tags{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #5241BF;
+            border-radius: 4px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            h5{
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 100%;
+                color: #FFFFFF;
+                margin-right: 4px;
+                margin-left: 3px;
+            }
+            span{
+                color: #FFFFFF;
+                margin-right: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

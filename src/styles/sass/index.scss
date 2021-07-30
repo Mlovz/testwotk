@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.pos_mg_top_20 {
+  margin-top: 20px;
+}
+.pos_mg_bottom_20 {
+  margin-bottom: 20px;
+}
+
+.App {
+  border: 1px solid #000;
+  position: relative;
+  .Bg1 {
+    position: absolute;
+    left: 0px;
+    top: 6px;
+  }
+
+  .Bg2 {
+    position: absolute;
+    left: 760px;
+    top: 186px;
+  }
+
+  .Bg3 {
+    position: absolute;
+    left: 100px;
+    top: 589px;
+  }
+  @media screen and (max-width: 1800px) {
+    .Bg1, .Bg2, .Bg3{
+      display: none;
+    }
+  }
+}
+
+.App__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__home{
+    width: 100%;
+
+  }
+  &__pos{
+    margin: 76px 70px;
+    background: linear-gradient(180deg, rgba(185, 251, 255, 0.2) 0%, rgba(227, 220, 255, 0.2) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 24px 20px;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+@import './components/_loader.scss';
+@import './components/_sidebar-left.scss';
+@import './components/_sidebar-right.scss';
+@import './components/_header.scss';
+@import './components/_filters.scss';
+@import './components/_tags.scss';
+@import './components/_items.scss';
+@import './pages/_home.scss';
+@import './pages/_main.scss';
